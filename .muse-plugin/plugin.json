@@ -13,6 +13,18 @@
       {
         "id": "find-rv-help",
         "path": "skills/find-rv-help/SKILL.md"
+      },
+      {
+        "id": "rv-breakdown",
+        "path": "skills/rv-breakdown/SKILL.md"
+      },
+      {
+        "id": "rv-parts-and-manuals",
+        "path": "skills/rv-parts-and-manuals/SKILL.md"
+      },
+      {
+        "id": "rv-campgrounds",
+        "path": "skills/rv-campgrounds/SKILL.md"
       }
     ],
     "mcpServers": []
