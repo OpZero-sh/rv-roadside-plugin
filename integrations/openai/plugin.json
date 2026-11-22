@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rv-roadside",
+  "version": "1.0.0",
+  "description": "Find US RV repair, parts, or campgrounds and identify the right manual or component information to bring to the shop.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://github.com/OpZero-sh/rv-roadside-plugin",
+  "repository": "https://github.com/OpZero-sh/rv-roadside-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "RV Roadside",
+        "shortDescription": "Find RV parts and service",
+        "longDescription": "Find US RV repair, parts, or campgrounds and identify the right manual or component information to bring to the shop.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/OpZero-sh/rv-roadside-plugin",
+        "privacyPolicyURL": "https://opzero.sh/privacy",
+        "supportURL": "https://opzero.sh/support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

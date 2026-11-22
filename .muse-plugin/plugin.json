@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "rv-roadside",
+  "version": "1.0.0",
+  "displayName": "RV Roadside",
+  "description": "Find US RV repair, parts, or campgrounds and identify the right manual or component information to bring to the shop.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "id": "find-rv-help",
+        "path": "skills/find-rv-help/SKILL.md"
+      }
+    ],
+    "mcpServers": []
+  }
+}

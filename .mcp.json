@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "roadside": {
+      "type": "http",
+      "url": "https://rv-roadside.mcp.opzero.sh/mcp"
+    }
+  }
+}

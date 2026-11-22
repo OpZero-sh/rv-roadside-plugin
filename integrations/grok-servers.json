@@ -1,0 +1,13 @@
+{
+  "roadside": {
+    "url": "https://rv-roadside.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "find_campgrounds",
+      "find_rv_parts",
+      "find_rv_repair",
+      "place_details",
+      "rv_guide"
+    ],
+    "token_env": "RV_ROADSIDE_ACCESS_TOKEN"
+  }
+}

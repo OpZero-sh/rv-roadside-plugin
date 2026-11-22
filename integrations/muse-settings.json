@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "mcpServers": {
+    "rv-roadside": {
+      "type": "streamable-http",
+      "url": "https://rv-roadside.mcp.opzero.sh/mcp"
+    }
+  }
+}
