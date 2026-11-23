@@ -56,13 +56,13 @@ The skills tell Claude to search with a town or ZIP, not a street address, and t
 
 ## Optional files for other clients
 
-These files are not used by Claude. Nothing in them runs unless you run it yourself.
+These files are not used by Claude. The two scripts that use them are not in this repository. They live in the catalog repository, [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins), and run only if you run them yourself.
 
-- `integrations/grok_example.py` is a sample script for the xAI API. When you run it without the dry run flag, it reads `XAI_API_KEY` and `RV_ROADSIDE_ACCESS_TOKEN` from your environment, and `XAI_MODEL` if set. It sends your question, the server address, the tool list and that access token to `https://api.x.ai/v1/responses`, so that xAI can call the RV Roadside server for you. With `--dry-run` it prints the request with a placeholder in place of the token and sends nothing.
+- The catalog's `tools/grok_example.py` is a sample script for the xAI API. It reads `integrations/grok-servers.json`. When you run it without the dry run flag, it reads `XAI_API_KEY` and `RV_ROADSIDE_ACCESS_TOKEN` from your environment, and `XAI_MODEL` if set. It sends your question, the server address, the tool list and that access token to `https://api.x.ai/v1/responses`, so that xAI can call the RV Roadside server for you. With `--dry-run` it prints the request with a placeholder in place of the token and sends nothing.
 - `integrations/grok-servers.json` holds the server address, the tool list and the name of the token variable that script uses.
 - `integrations/muse-settings.json` is a settings fragment for connecting the server in Muse Code.
 - `integrations/openai/` holds the manifest and connection file for the ChatGPT and Codex package.
-- `scripts/build_openai.py` builds that package as a ZIP on your machine from the manifests, the skills, the license and the product icon. It makes no network requests.
+- The catalog's `tools/build_openai.py` builds that package as a ZIP on your machine from the manifests, the skills, the license and the product icon. It makes no network requests.
 - `.muse-plugin/plugin.json` is the manifest for Muse Code.
 
 ## Sources and coverage

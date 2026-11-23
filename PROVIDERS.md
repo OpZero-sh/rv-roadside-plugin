@@ -6,7 +6,7 @@ Find US RV repair, parts, or campgrounds and identify the right manual or compon
 
 [Download the ChatGPT and Codex package](https://raw.githubusercontent.com/OpZero-sh/rv-roadside-plugin/downloads/rv-roadside.zip). It includes the product skills, remote connection and product icon.
 
-For a publisher or developer setup, open the OpenAI developer dashboard, choose **Upload plugin**, upload the one-connection ZIP and connect the declared MCP endpoint. People with an existing directory listing can install it directly in ChatGPT. For an OAuth-protected service select OAuth and complete its browser sign-in. Choose no authentication for a public service. Rebuild the archives from a checkout with `python3 scripts/build_openai.py ../plugin-zips`.
+For a publisher or developer setup, open the OpenAI developer dashboard, choose **Upload plugin**, upload the one-connection ZIP and connect the declared MCP endpoint. People with an existing directory listing can install it directly in ChatGPT. For an OAuth-protected service select OAuth and complete its browser sign-in. Choose no authentication for a public service. The builder is not in this repository. To rebuild the archives, clone [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins) beside this checkout and run `python3 ../plugins/tools/build_openai.py ../plugin-zips` from this checkout.
 
 [OpenAI package guide](https://developers.openai.com/plugins/build/plugins) · [Upload and connection setup](https://developers.openai.com/plugins/deploy/submission)
 
@@ -20,10 +20,10 @@ From a checkout of this repository, run `grok plugin validate .` and `grok plugi
 
 ## Grok API
 
-Preview a request locally with Python 3. Add `XAI_API_KEY` in your environment and omit `--dry-run` to send it. Use `--model` to select a model enabled for your account. The example requests a focused set of product tools; its tool list is in [grok-servers.json](integrations/grok-servers.json).
+The example script is not in this repository. Clone [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins) beside this checkout, then preview a request from this checkout with Python 3. Add `XAI_API_KEY` in your environment and omit `--dry-run` to send it. Use `--model` to select a model enabled for your account. The example requests a focused set of product tools; its tool list is in [grok-servers.json](integrations/grok-servers.json).
 
 ```sh
-python3 integrations/grok_example.py --dry-run 'Use RV Roadside to find RV parts and service'
+python3 ../plugins/tools/grok_example.py --dry-run 'Use RV Roadside to find RV parts and service'
 ```
 
 For authenticated connections, obtain a current end-user OAuth access token for each named OpZero service in your application’s sign-in flow. Supply the unprefixed token in `RV_ROADSIDE_ACCESS_TOKEN`. Your application manages consent, refresh and storage. The example attaches each token only to its own MCP server.
